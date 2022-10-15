@@ -2,7 +2,7 @@ import Heading from "./Heading"
 
 const Footer = () =>(
     <footer>
-        <Heading tag="h3" text="Header"/>
+        <Heading tag="h3" text="This is Footer"/>
     </footer>
 )
 
