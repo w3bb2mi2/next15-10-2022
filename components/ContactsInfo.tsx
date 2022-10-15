@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Heading from "./Heading";
 import {contactType} from "../types";
+import React from "react";
 
 type contactInfoProps = {
     contact: contactType

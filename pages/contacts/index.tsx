@@ -2,7 +2,12 @@ import Heading from "../../components/Heading";
 import styles from "../../styles/Home.module.scss"
 import Head from "next/head";
 import Link from "next/link"
-
+import React from "react";
+import { FC } from "react";
+import {contactType} from "../../types";
+type contactsTypeProps = {
+    contacts:[contactType]
+}
 
 export const getStaticProps = async () => {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -21,7 +26,7 @@ export const getStaticProps = async () => {
 };
 
 
-const Contacts = ({contacts}) => {
+const Contacts: FC<contactsTypeProps> = ({contacts}) => {
     
     return (
         <div className={styles.container}>

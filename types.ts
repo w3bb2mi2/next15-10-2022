@@ -6,7 +6,13 @@ export type addressType = {
 }
 
 export type contactType = {
+    id:string,
     name: string,
     email: string,
     address: addressType
+}
+
+export type postType = {
+    title: string,
+    body: string
 }
