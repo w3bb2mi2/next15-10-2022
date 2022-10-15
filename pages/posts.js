@@ -1,8 +1,13 @@
 import Heading from "../components/Heading";
-
-const Posts = () =>{
-    return(
-        <Heading text="Posts..."/>
+import Head from "next/head"
+const Posts = () => {
+    return (
+        <>
+            <Head>
+                <title>Posts</title>
+            </Head>
+            <Heading text="Posts..." />
+        </>
     )
 }
 
