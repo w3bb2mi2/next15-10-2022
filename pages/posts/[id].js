@@ -17,10 +17,8 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const { id } = context.params;
-    console.log(id)
     const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
     const data = await response.json()
-    //.then((res)=>console.log({res}))
     if(!data){
         return {
             notFound: true

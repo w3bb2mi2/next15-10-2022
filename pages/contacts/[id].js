@@ -12,7 +12,7 @@ export const getServerSideProps = async (context) =>{
             notFound: true
         }
     }
-    return {
+    return { 
         props: {contact: data}
     }
 }

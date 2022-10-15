@@ -3,17 +3,18 @@ import Layout from '../components/Layout'
 import Head from 'next/head'
 
 
-const MyApp = ({ Component, pageProps }) => (
+const MyApp = ({ Component, pageProps }) => {
+  return (
     <Layout>
       <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:wght@300;600&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:wght@300;600&display=swap" rel="stylesheet" />
       </Head>
       <main>
         <Component {...pageProps} />
       </main>
     </Layout>
-  
+  )
 
-)
+}
 
 export default MyApp
